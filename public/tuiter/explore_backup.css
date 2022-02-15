@@ -1,0 +1,123 @@
+/*.wd-links-for-you {*/
+/*    color: #918888;*/
+/*    position : relative;*/
+/*}*/
+
+/*.wd-links-for-you-selected {*/
+/*    color: blue;*/
+/*    position: relative;*/
+/*    border-bottom: #191991;*/
+/*    border-bottom-width: 20px;*/
+/*}*/
+
+/*.wd-float-left ul{*/
+/*    display:table-row;*/
+/*}*/
+
+/*.wd-float-left ul li{*/
+/*    !*float: left;*!*/
+/*    !*width : 80px;*!*/
+/*    display: block;*/
+/*    float: left;*/
+/*    height: 50px;*/
+/*    list-style-type: none;*/
+/*    margin-left: 15px;*/
+/*    vertical-align: middle;*/
+/*    border-bottom: #191991;*/
+/*}*/
+/*.wd-float-left  ul li a {*/
+/*    display:table-cell;*/
+/*    vertical-align: middle;*/
+/*    height:50px;*/
+/*    text-decoration: none;*/
+/*    font-family: sans-serif;*/
+/*    !*border: solid 1px black;*!*/
+/*}*/
+
+/*!*a[class^="wd-links-for-you"] :active focus visited {*!*/
+/*!*    border-bottom: #191991;*!*/
+/*!*    border-bottom-width: thick;*!*/
+/*!*    color: #ff0000;*!*/
+/*!*}*!*/
+/*ul li.button a {*/
+/*    height:50px;*/
+/*    !*border: solid 1px black;*!*/
+/*}*/
+/*.wd-float-left {*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width : 100%*/
+/*}*/
+
+/*.wd-links-for-you-selected{*/
+/*    color: #61dafb;*/
+/*    text-decoration: none;*/
+/*    font-family: sans-serif;*/
+/*}*/
+
+/*.wd-header{*/
+/*    float-items: left;*/
+/*}*/
+
+/*
+1. Body background color.
+2. wd-body => offset
+3. Search bar
+4. input place holder
+5. setting gear
+6. search image
+*/
+/*Background color of the body*/
+/.wd-menu-container{
+    font-family: sans-serif;
+    font-style: revert;
+}
+
+#menu_container { text-transform: uppercase; font-size: 1.3em; font-style: 'normal'; font-family: 'Lato', sans-serif; vertical-align: middle;  display: inline-block;}
+#menu_container ul { list-style-type: none; }
+#menu_container ul li { display: inline-block; margin-left: 20px; text-decoration: none; color: #4e918b; }
+#menu_container ul li:hover { font-weight: 900; }
+
+.wd-header {
+    padding: 10px 0 30px;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    display: inline-block;
+}
+.wd-searchimage {
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 9px;
+    display: inline;
+}
+.wd-setting-gear{
+    position: fixed;
+    right:12px;
+    top: 20px;
+}
+/*For the input text placeholder*/
+input[class^="wd-searchbox"]::-webkit-input-placeholder {
+    color: gray;
+    padding-left: 20px;
+}
+/*For the input text*/
+.wd-searchbox {
+    position: relative;
+    left: 10px;
+    border:  rgb(47, 51, 54);
+    border-radius: 30px;
+    background-color: rgb(169,169,169,0.5);
+    margin: 1px;
+    /*-webkit-animation: hover 2s -0.4s alternate infinite;
+    animation: hover 2s -0.4s alternate infinite;*/
+    display: inline;
+    padding-left: 10px;
+    text-align: center;
+    color: #ffffff;
+    height : 30px;
+    width: 75%;
+}
+.wd-body{
+    offset-before: 16px;
+}

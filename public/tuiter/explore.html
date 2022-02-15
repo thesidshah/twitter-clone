@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link href="explorer.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--
+input -> wd-searchbox
+button -> wd-searchbutton`
+search -> wd-searchimage -> nothing is written in the button, will attach image to wd-searchimage
+-->
+<div class = "wd-body">
+
+    <div class="wd-search">
+        <form name = "wd-searchbar">
+            <div type="submit" class ="wd-searchbutton">
+                <button class="wd-searchButton" type="submit">
+<!--                    <i class="material-icons">-->
+<!--                <image class="wd-searchimage" src="search.png" />-->
+                        <i class="icon fa fa-search" style="color: white"></i>
+                </button>
+                <input type = "search" id = "searchbox" placeholder="Search Tuiter" class="wd-searchboxInput">
+
+            </div>
+        </form>
+        <div class="wd-setting-gear">
+            <a href="explore-settings.html">
+                <img src="gear.png" class = "wd-setting-gear-image" width = "20px" height = "20px"/>
+            </a>
+        </div>
+    </div>
+
+<div class = "wd-header wd-menu-container">
+    <ul>
+         <li id="selected" class="wd-selected-header">
+            <a href="#tuits-for-you" class ="wd-links-for-you-selected">
+                For you
+            </a>
+             <div class="wd-div-selected">   </div>
+         </li>
+
+        <li>
+            <a href="#trending" class = "wd-links-for-you">Trending</a>
+        </li>
+        <li>
+                <a href="#covid19" class = "wd-links-for-you">Covid-19</a>
+        </li>
+        <li>
+            <a href="#news" class = "wd-links-for-you">News</a>
+        </li>
+        <li>
+            <a href="#sports" class = "wd-links-for-you">Sports</a>
+        </li>
+        <li>
+            <a href="#entertainment" class = "wd-links-for-you">Entertainment</a>
+        </li>
+    </ul>
+</div>
+<hr class="wd-divider">
+<div class="wd-body-content">
+<!--
+    Three types of posts.
+    1.
+    #topic
+    #title
+    #number of retweets
+    2.
+    #Author image (icon) #Author Name #Verified symbol # time of post
+    #title
+    3.
+    #topic
+    #Title
+-->
+    <div class="wd-tuits-recommended">
+        <div class="wd-tuit-box">
+<!--            <div class="wd-tuit-1">-->
+                <p class="wd-tuit-topic">
+                    Trending in Science
+                </p>
+                <h4 class="wd-tuit-title">Starship</h4>
+
+            <p class="wd-tuit-topic">
+                55.5K Tuits
+            </p>
+        </div>
+<!--        </div>-->
+        <div class="wd-tuit-box">
+            <p class = "wd-tuit-topic">
+                <img src="Symbol-New-York-Times.png" class="wd-profile-icon"/> The New York Times
+                <img src="verified_symbol.png" class="wd-verified-tuitter-user"/>
+            </p>
+            <h4 class="wd-tuit-title">Cras mollis, turpis in mattis pretium</h4>
+            <img src="news_flash.jpg" class="wd-tuit-image"/>
+        </div>
+        <div class="wd-tuit-box">
+            <p class = "wd-tuit-topic">
+                COVID-19 • LIVE
+            </p>
+            <h4 class = "wd-tuit-title">
+                COVID-19: News and updates for Massachusetts
+            </h4>
+            <img src="massachusetts_map.jpg" class="wd-tuit-image"/>
+        </div>
+        <div class="wd-tuit-box">
+            <p class = "wd-tuit-topic">Sports Trending</p>
+            <h4 class = "wd-tuit-title">Joe Rogan</h4>
+            <p class = "wd-tuit-topic">5,218 Tuits</p>
+        </div>
+        <div class="wd-tuit-box">Four</div>
+        <div class="wd-tuit-box">Five</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

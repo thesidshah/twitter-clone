@@ -1,0 +1,151 @@
+body{
+    background: #000000;
+}
+.wd-body {
+    left: 16px;
+}
+.wd-search {
+    position: relative;
+    top: 2%;
+    left: 2%;
+    /*transform:  translate(-50%,50%);*/
+    /*background: #2f3640;*/
+    height: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+.wd-setting-gear {
+    position: absolute;
+    top: 17px;
+    right: 2%;
+}
+
+.wd-searchButton{
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+#searchbox {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    background-color: darkgray;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+/*Okay now lets work on the bar of links below the search box */
+.wd-menu-container {
+    vertical-align: middle;
+    width: calc(100% - 100px);
+    display: inline-block;
+}
+
+.wd-menu-container > ul > li{
+    display: inline-block;
+    margin-left: .4%;
+    vertical-align: middle;
+    float: inside;
+    font-family: sans-serif;
+}
+
+.wd-menu-container > ul {
+    list-style: none;
+    /*display: inline-block;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.wd-menu-container > ul > li > a :visited {
+    color: blue;
+}
+
+
+.wd-menu-container > ul > li > a {
+    text-decoration: -webkit-link;
+    /*color: darkgray;*/
+    font-size: 15px;
+    color: rgb(110,118,125);
+}
+
+.wd-menu-container ul li:first-child a{
+    color: darkblue;
+}
+
+.wd-div-selected {
+    height: 1px;
+    width: auto;
+    border-bottom:5px solid #0001b7;
+    margin-top: 10px;
+}
+.wd-menu-container.wd-selected-header{
+    border: #7070ff;
+}
+.wd-body-content {
+
+}
+.wd-divider{
+    border-bottom: solid darkgray;
+    position: absolute;
+    transform: translateY(-17px);
+    margin: 0px;
+    width: 100%;
+}
+
+.wd-tuits-recommended {
+    display: grid;
+    color: white;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.wd-tuit-box {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 25px;
+
+}
+
+.wd-tuit-title {
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 1px;
+    display: inline-block;
+}
+
+.wd-tuit-topic {
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 1px;
+    color: darkgray;
+    padding-bottom: 0px;
+}
+
+.wd-profile-icon {
+    height: 12px;
+    width: 12px;
+    display: inline;
+    padding-right: 2px;
+}
+
+.wd-tuit-image {
+    float: right;
+    height : 100px;
+    width : 100px;
+    border-radius: 20px;
+    right : 16px;
+    position: relative;
+    transform: translateY(-16px);
+    margin: 0;
+
+}
+
+.wd-verified-tuitter-user {
+    height : 11px;
+    width : 11px;
+    border-radius: 2px;
+    margin: 0px 2px 0px 2px;
+}
