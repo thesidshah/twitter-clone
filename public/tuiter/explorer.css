@@ -1,26 +1,18 @@
 body{
     background: #000000;
 }
-/*.wd-body {*/
-/*    left: 16px;*/
-/*}*/
-
-#search {
-    background: #2f3640;
-    color: white;
-    border: none;
+.wd-body {
+    left: 16px;
 }
-
 .wd-search {
     position: relative;
     top: 2%;
     left: 2%;
-    transform:  translate(-50%,50%);
-    background: #2f3640;
+    /*transform:  translate(-50%,50%);*/
+    /*background: #2f3640;*/
     height: auto;
     width: 95%;
     padding: 10px;
-    /*margin-bottom: 10px;*/
 }
 
 .wd-setting-gear {
@@ -62,7 +54,7 @@ body{
 
 .wd-menu-container > ul {
     list-style: none;
-    display: inline-block;
+    /*display: inline-block;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -98,7 +90,7 @@ body{
 .wd-divider{
     border-bottom: solid darkgray;
     position: absolute;
-    /*transform: translateY(-17px);*/
+    transform: translateY(-17px);
     margin: 0px;
     width: 100%;
 }
@@ -106,16 +98,12 @@ body{
 .wd-tuits-recommended {
     display: grid;
     color: white;
-
-
-    /*grid-template-rows: repeat(4, 1fr);*/
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .wd-tuit-box {
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
+    border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 25px;
-    color: white;
-    background-color: black;
 
 }
 
@@ -125,20 +113,6 @@ body{
     font-size: 16px;
     margin: 1px;
     display: inline-block;
-    color: white;
-}
-
-.wd-tuit-title-2 {
-    font-weight: 500;
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0px;
-    display: inline-block;
-    color: white;
-}
-
-.card {
-    background-color: #565656;
 }
 
 .wd-tuit-topic {
@@ -151,10 +125,9 @@ body{
 }
 
 .wd-profile-icon {
-    height: 20px;
-    width: 20px;
+    height: 12px;
+    width: 12px;
     display: inline;
-    /*float: left;*/
     padding-right: 2px;
 }
 
@@ -175,220 +148,4 @@ body{
     width : 11px;
     border-radius: 2px;
     margin: 0px 2px 0px 2px;
-}
-
-.wd-padded-right {
-    padding-right: 6px;
-}
-
-.col-3 .nav-link {
-    /*width: 15%;*/
-    border-bottom : 1px groove lightgray;
-}
-
-.col-3 .nav {
-    /*width: 15%;*/
-    border: 1px groove lightgray;
-
-}
-
-.container{
-    margin: 10px;
-}
-
-.card-body {
-    background-color: black;
-
-}
-
-@media screen and (max-width: 1200px) {
-    .wd-text {
-        display: none; }
-    .nav-item-en{
-        display: none;
-    }
-}
-
-/*.nav-item .active {*/
-/*    border-bottom: 1px groove #0001b7;*/
-
-
-/*}*/
-
-.list-group-items button {
-    float: right;
-    display: inline-block;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-
-.wd-tuit-image-follow {
-    float: left;
-    height : 50px;
-    width : 50px;
-    border-radius: 50px;
-    right : 16px;
-    position: relative;
-    /*transform: translateY(-16px);*/
-    margin: 0;
-}
-
-list-group {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    padding-left: 0;
-    margin-bottom: 0;
-    border-radius: 0.25rem;
-}
-
-#tweet{
-    width: 100%;
-    border-radius: 2.5rem;
-}
-
-.wd-search {
-    position: relative;
-    padding-left: 0px;
-    padding-top: 0px;
-    z-index: 1;
-    /*left : 50%;*/
-    top : 2%;
-    background-color: transparent;
-}
-
-.wd-padded-left {
-    padding-left: 2em;
-}
-/*.col{*/
-/*    margin-left: 20px;*/
-/*}*/
-
-/*.col-3 {*/
-/*     width: 15%;*/
-/*}*/
-
-.fa-cog {
-    color: #0001b7;
-    padding-left: 4px;
-}
-
-
-.wd-rounded-corners-10px{
-    border-radius: 10px;
-    border: 2px groove #505050;
-}
-.wd-bg-gray {
-    background-color: #232222;
-
-    /*border-radius: 30px;*/
-}
-
-.nav-tabs .nav-link {
-    border: none;
-    background-color: transparent;
-    color: lightgray;
-
-}
-
-.wd-follow-box {
-    /*border-top: 1px solid rgba(255, 255, 255, 0.5);*/
-    padding: 25px;
-    /*color: white;*/
-
-
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-bottom:5px groove blue;
-    background-color: transparent;
-    color: white;
-
-}
-
-.card {
-
-}
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-}
- .fa-ellipsis-h:before, .fa-ellipsis:before {
-     content: "\f141";
-     color: black;
-     margin-left: 1px;
- }
-.input-group>.form-control, .input-group>.form-select {
-    position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    min-width: 0;
-    margin-top: -10px;
-}
-
-@media screen and (max-width: 1999px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 290px;
-        text-align: left;
-        margin-left: 5px;
-        font-size:30px;
-    }
-}
-
-
-@media screen and (max-width: 1400px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 240px;
-        text-align: left;
-        margin-left: 5px;
-        font-size:30px;
-    }
-}
-
-@media screen and (max-width: 1340px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 240px;
-        text-align: left;
-        margin-left: 5px;
-        font-size:30px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 190px;
-        text-align: left;
-        margin-left: 5px;
-        font-size:30px;
-    }
-}
-
-@media screen and (max-width: 995px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 250px;
-        text-align: left;
-        margin-left: 5px;
-        font-size:30px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 175px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #wd-image-title{
-        color: white;
-        margin-top: 150px;
-    }
 }
