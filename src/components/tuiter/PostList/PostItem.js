@@ -1,18 +1,20 @@
 import React from 'react';
 
-const PostItem = (post = {
-    image: '../images/elon.jpg',
-    author: 'Elon Musk',
-    handle: 'elonmusk',
-    time: '23h',
-    tweet: 'Amazing show about @inspiration4x mission',
-    postImage:'astronaut.jpg',
-    caption:'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
-    text:'From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all civlian orbital space..'
-}
+const PostItem = ({
+                      post = {
+                          image: '../images/elon.jpg',
+                          author: 'Elon Musk',
+                          handle: 'elonmusk',
+                          time: '23h',
+                          tweet: 'Amazing show about @inspiration4x mission',
+                          postImage: 'astronaut.jpg',
+                          caption: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
+                          text: 'From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all civlian orbital space..'
+                      }
+                  }
 ) => {
-    console.log(post);
-    post = post.post;
+    // console.log(post);
+    // post = post.post;
     console.log(post);
     return(<li className="list-group-item">
 
