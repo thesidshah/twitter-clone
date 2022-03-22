@@ -1,0 +1,287 @@
+.fa-cog.fa-2x{
+	color: blue;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+
+.fa.fa-search{
+	color: darkgray;
+}
+
+.wd-display-img{
+	padding-left: 0px;
+	padding-top: 12px;
+	border-radius: 90%;
+	width: 48px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.wd-search-glass{
+	position: absolute;
+	padding-left: 8px;
+	padding-top: 5px;
+	z-index: 1;
+}
+
+.nav-tabs{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn-primary.btn-sm.tweetBtn{
+	margin-top: 10px;
+    padding: 12px 79px;
+    border-radius: 23px;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #000;
+    border-color: black;
+    border-bottom-color: #1F1FD1;
+    border-width: 3px;
+}
+
+.btn-primary.btn-sm.followBtn{
+	float: right;
+	border-radius: 60px;
+}
+
+.wd-follow-img{
+	float: left;
+	margin: 0px;
+	margin-right: 16px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50px;
+}
+
+.wd-follow-handle{
+	color: black;
+	text-decoration:none;
+	padding-left: 5px;
+}
+
+.wd-topic-img{
+	float: right;
+	margin-left: 16px;
+	margin-right: 16px;
+	width: 85px;
+	height: 85px;
+	border-radius: 20px;
+}
+
+.wd-topic-heading-image{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.list-group{
+	margin-top: 15px;
+}
+
+.wd-topic-topicname{
+	color: gray;
+	text-decoration: none;
+	padding-top: 8px;
+}
+
+.wd-topic-heading{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 0px;
+}
+
+.wd-topic-description{
+	text-decoration: none;
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+.wd-topic-tweetcount{
+	color: gray;
+	text-decoration: none;
+}
+
+.wd-topic-time{
+	color: gray;
+}
+
+.col-lg-2.col-md-1.col-2{
+	margin-top: 15px;
+}
+
+.col-lg-6.col-md-11.col-10{
+	margin-top: 15px;
+}
+
+.col-lg-4.d-none.d-lg-block{
+}
+
+.wd-page{
+	background-color: black;
+}
+
+.list-group-item.list-group-item-action{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-color: black;
+}
+
+.fa.fa-cog.fa-2x{
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: gray;
+}
+
+.container{
+	background-color: black;
+}
+
+.wd-follow-handle{
+	color: gray;
+	font-weight: normal;
+}
+
+.list-group-item{
+	color: white;
+	font-weight: bold;
+	background-color: black;
+	border-color: gray;
+}
+
+.btn.btn-primary.btn-sm.followBtn{
+	color: black;
+	background-color: white;
+	border-style: none;
+	font-weight: bold;
+}
+
+
+.nav.nav-tabs{
+	background-color: black;
+	border-bottom-color: gray;
+}
+
+.wd-first-column{
+	background-color: black;
+}
+
+.form-control{
+	background-color: #353536;
+	color: white;
+	padding-left: 30px;
+	border-style: none;
+	border-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin-right: 15px;
+}
+
+.fa.fa-home{
+	padding-right: 12px;
+}
+
+.fa.fa-hashtag{
+	padding-right: 15px;
+}
+
+.fa.fa-bell{
+	padding-right: 15px;
+}
+
+
+.fa.fa-envelope{
+	padding-right: 15px;
+}
+
+
+.fa.fa-bookmark{
+	padding-right: 19px;
+}
+
+
+.fa.fa-list{
+	padding-right: 15px;
+}
+
+
+.fa.fa-user{
+	padding-right: 19px;
+}
+
+.fa.fa-ellipsis-h{
+	padding-right: 19px;
+}
+
+.wd-nav-text{
+	color: gray;
+}
+
+.wd-nav-text-vanish{
+	color: gray;
+}
+
+.wd-nav-text-selected{
+	color: white;
+}
+
+.nav-link{
+	background-color: black;
+}
+
+.nav-link.active{
+	background-color: black;
+}
+
+
+@media screen and (max-width: 1300px) {
+      .wd-menu-text {
+        display: none; }
+      .tweetBtn {
+        display: none; } 
+      .wd-nav-text-vanish{
+      	display: none;
+      }
+}
+
+.wd-head-image.h1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+.wd-img-text{
+	position: absolute;
+	bottom: 15px;
+	margin-left: 10px;
+	font-size: 30px;
+}
+
+.wd-icon-links{
+	padding-top: 12px;
+	padding-left: 0px;
+}
+
+.wd-icon-link{
+	padding:20px;
+	color: gray;
+}
+
+.wd-icon-link-heart{
+	color: gray;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
