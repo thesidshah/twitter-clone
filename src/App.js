@@ -64,10 +64,10 @@ function App() {
                     <Route path="/labs"
                            element={<Labs/>}/>
                     <Route path="/tuiter"
-                           element={<Tuiter activeItem="Home"/>}/>
-                    <Route path="/tuiter/home" element={<HomeScreen/>}/>
-                    <Route path="/tuiter/explore" element={<ExploreScreen/>}/>
-
+                           element={<Tuiter activeItem="Home"/>}>
+                    <Route path="home" element={<HomeScreen/>}/>
+                    <Route path="explore" element={<ExploreScreen/>}/>
+                    </Route>
                 </Routes>
             </div>
         </BrowserRouter>

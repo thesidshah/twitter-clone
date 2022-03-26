@@ -231,7 +231,7 @@
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 600px) {
       .wd-menu-text {
         display: none; }
       .tweetBtn {
