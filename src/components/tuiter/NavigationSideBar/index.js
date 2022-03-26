@@ -75,7 +75,7 @@ const NavigationSidebar = ({activeItem = 'Explore'}) => {
                         </Link>
                     </div>
                     <div className = "nav-item">
-                        <Link className="list-group-item active wd-borderless" to="/tuiter/exlore">
+                        <Link className="list-group-item active wd-borderless" to="/tuiter/explore">
                             <i className="fa-solid fa-hashtag wd-padded-right"></i><span className = "wd-text">Explore </span>
                         </Link>
                     </div>
