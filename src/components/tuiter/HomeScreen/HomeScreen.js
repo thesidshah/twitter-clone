@@ -3,6 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 import PostList from "../PostList/PostList.js";
 import React from "react";
 import NavigationSidebar from "../NavigationSideBar";
+import NavItemList from "../NavBar/NavItemList";
 
 const HomeScreen = () => {
     return (
@@ -21,21 +22,22 @@ const HomeScreen = () => {
 
 
                 <ul className="nav nav-tabs mt-6">
-                    <li className="nav-item">
-                        <a className="nav-link active" href="for-you.html"><span className="wd-nav-text-selected">For you</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="trending.html"><span className="wd-nav-text">Trending</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#"><span className="wd-nav-text">News</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#"><span className="wd-nav-text">Sports</span></a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#"><span className="wd-nav-text-vanish">Entertainment</span></a>
-                    </li>
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link active" href="for-you.html"><span className="wd-nav-text-selected">For you</span></a>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="trending.html"><span className="wd-nav-text">Trending</span></a>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#"><span className="wd-nav-text">News</span></a>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#"><span className="wd-nav-text">Sports</span></a>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#"><span className="wd-nav-text-vanish">Entertainment</span></a>*/}
+                    {/*</li>*/}
+                    <NavItemList/>
                 </ul>
                 <PostList/>
             </div>

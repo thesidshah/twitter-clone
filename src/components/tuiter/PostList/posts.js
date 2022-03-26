@@ -1,5 +1,5 @@
 export default [
-    {   image: '../images/js.jpg',
+    {   image: '../images/elon.jpg',
         author: 'Elon Musk',
         handle: 'elonmusk',
         time: '23h',
@@ -8,7 +8,7 @@ export default [
         caption:'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         text:'From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all civlian orbital space..'
     },
-    {   image: '../images/node.jpg',
+    {   image: '../images/nyp.png',
         author: 'New York Post',
         handle: 'nypost',
         time: '23h',

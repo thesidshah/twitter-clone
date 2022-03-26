@@ -5,6 +5,8 @@
 	padding-top: 2px;
 }
 
+
+
 .fa.fa-search{
 	color: darkgray;
 }
@@ -128,7 +130,7 @@
 	background-color: black;
 }
 
-.list-group-item.list-group-item-action{
+.list-group-item 	.list-group-item-action{
 	text-decoration: none;
 	color: white;
 	background-color: black;
@@ -175,7 +177,7 @@
 }
 
 .form-control{
-	background-color: #353536;
+	background-color: white;
 	color: white;
 	padding-left: 30px;
 	border-style: none;

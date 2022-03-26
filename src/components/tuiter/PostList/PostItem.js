@@ -15,7 +15,7 @@ const PostItem = ({
 ) => {
     // console.log(post);
     // post = post.post;
-    console.log(post);
+    // console.log(post);
     return(<li className="list-group-item">
 
         <img src={post.image} className="wd-display-img" alt = "Post"/>
