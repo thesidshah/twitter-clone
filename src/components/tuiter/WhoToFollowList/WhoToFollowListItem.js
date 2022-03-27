@@ -9,7 +9,7 @@ const WhoToFollowListItem = ({
     return(
         <>
             <li className="list-group-item list-group-items wd-follow-box wd-bg-gray">
-                <img src={who.avatarIcon} class="wd-tuit-image-follow" alt="Icon"/>
+                <img src={who.avatarIcon} className="wd-tuit-image-follow" alt="Icon"/>
                     <span className = "wd-tuit-title">{who.userName}</span>
                     <i className="fa fa-check-circle"/><br/>
 				    <a href="#" className="wd-follow-handle wd-tuit-topic">@{who.handle}</a>

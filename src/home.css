@@ -289,3 +289,26 @@
 	padding-right: 15px;
 }
 
+.wd-icon-link-heart-filled{
+	color: red;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wd-video {
+	/*width : 100%;*/
+	height: 240px;
+	border-radius: 30px;
+}
+
+.wd-whats-happening {
+	width: 100%;
+	background-color: black;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+}
+.wd-whats-happening-icon {
+	color: #00c4ff;
+}
