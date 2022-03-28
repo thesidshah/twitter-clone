@@ -12,6 +12,7 @@ import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import TestHome from "./components/tuiter/testHome";
 import Profile from "./components/tuiter/Profile";
+import EditProfile from "./components/tuiter/Profile/EditProfile";
 
 
 // function App() {
@@ -71,6 +72,7 @@ function App() {
                     <Route path="explore" element={<ExploreScreen/>}/>
                     <Route path = "testHome" element = {<TestHome/>}/>
                     <Route path = "profile" element = {<Profile/>}/>
+                    <Route path = "editprofile" element = {<EditProfile/>}/>
                     </Route>
                 </Routes>
             </div>
