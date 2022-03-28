@@ -42,8 +42,6 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         });
     }
-
-
     return (
         <>
       <textarea value={whatsHappening}

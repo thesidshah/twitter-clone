@@ -1,0 +1,16 @@
+.wd-profile-banner {
+    width: 100%;
+}
+.wd-profile-logo {
+    /*float: left;*/
+    height : 100px;
+    width : 100px;
+    border-radius: 50px;
+    right : 20px;
+    left : 20px;
+    position: relative;
+    transform: translateY(-30px);
+    margin: 0;
+    border: solid black 4px;
+}
+

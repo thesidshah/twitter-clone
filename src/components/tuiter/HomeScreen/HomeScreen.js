@@ -1,7 +1,7 @@
 import React from "react";
 import NavItemList from "../NavBar/NavItemList";
 import TuitList from "../tuit-list/tuit-list";
-import whatsHappening from "./whats-happening";
+import WhatsHappening from "./whats-happening";
 
 const HomeScreen = () => {
 
@@ -17,8 +17,8 @@ const HomeScreen = () => {
                 <NavItemList/>
             </ul>
             {/*<PostList/>*/}
-            {whatsHappening()}
-            <whatsHappening/>
+            {/*{WhatsHappening()}*/}
+            <WhatsHappening/>
             <TuitList/>
         </>
     );

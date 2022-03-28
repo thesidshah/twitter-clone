@@ -21,6 +21,23 @@ const tuitsReducer = (state = tuits, action) => {
                 newTuit,
                 ...state,
             ];
+        case 'delete-tuit':
+            return state.filter(tuit => tuit !== action.tuit);
+        case 'like-tuit':
+            return state.map(tuit => {
+                if(tuit._id === action.tuit._id) {
+                    if(tuit.liked === true) {
+                        tuit.liked = false;
+                        tuit.stats.likes--;
+                    } else {
+                        tuit.liked = true;
+                        tuit.stats.likes++;
+                    }
+                    return tuit;
+                } else {
+                    return tuit;
+                }
+            });
         default:
             return tuits
     }

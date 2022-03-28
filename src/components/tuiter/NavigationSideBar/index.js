@@ -128,7 +128,7 @@ const NavigationSidebar = ({activeItem = 'Explore'}) => {
         <nav className="wd-first-column">
 
         {/*NavSideBarItems.map(navSide => {<NavSideBarItem NavItem={navSide}/>})*/}
-            {NavSideBarItems.map(navSide => {return <NavSideBarItem NavItem = {navSide} active={active}/>})}
+            {NavSideBarItems.map(navSide => {return <NavSideBarItem NavItem = {navSide} active={active} key = {navSide.to}/>})}
             <div className="d-grid mt-2">
                 <a href="/public/tuiter/tuit.html"
             className="btn btn-primary btn-block rounded-pill">

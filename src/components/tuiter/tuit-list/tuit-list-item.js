@@ -1,4 +1,6 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
+import TuitStats from "../HomeScreen/tuit-stats";
 
 const videoCheck = ({tuit = {
     "_id": "123",
@@ -65,22 +67,31 @@ const TuitListItem = ({tuit = {
     }
 }}) => {
 
+    const dispatch = useDispatch();
+    const tuitClickHandler = () => {
+        dispatch({type: 'delete-tuit',
+            tuit: tuit
+        });
+    }
     return(
         <li className = "list-group-item">
+
             <img src={tuit["logo-image"]} className = "wd-display-img" alt = "Profile"/>
             <a href = "/" className = "wd-topic-heading">{tuit.postedBy.username}</a>
             {tuit.verified ? <i className="fa fa-check-circle"/> : <></>}
             <a href = "/" className = "wd-follow-handle">@{tuit.handle + " "}</a>
-            <span className="wd-topic-time">{tuit.time}</span><br/>
+            <span className="wd-topic-time">{tuit.time}</span>
+            {/*<div className = "pull-right float-end">*/}
+            {/*<a className = "wd-delete-tuit" onClickCapture={tuitClickHandler}  ><i className="fa-solid fa-x"/></a>*/}
+            {/*</div><br/>*/}
+            <i onClick={() =>
+    tuitClickHandler(tuit)}
+    className="fas fa-remove
+                  fa-pull-right"/>
             {/*<span className="wd-topic-topicname">{tuit.title}</span><br/>*/}
             <span className="wd-topic-description">{tuit.tuit}</span><br/>
             {videoCheck({tuit})}
-            <div className="wd-icon-links">
-                <a href="/" className="wd-icon-link"><i className='fa fa-comment'/> {tuit.stats.comments}</a>
-                <a href="/" className="wd-icon-link"><i className="fa fa-retweet"/> {tuit.stats.retuits}</a>
-                <a href="/" className={(tuit.liked ? "wd-icon-link-heart-filled" : "wd-icon-link-heart")}>    &#10084;  {tuit.stats.likes}</a>
-                <a href="/" className="wd-icon-link"><i className="fa fa-upload" aria-hidden="true"/></a>
-            </div>
+            <TuitStats tuit = {tuit}/>
             {/*<img src="${tuit.image}" className="wd-display-img" alt = "tuit image"/>*/}
             {/*<a href="#" className="wd-topic-heading">${post.author}  </a><i className="fa fa-check-circle"/><a*/}
             {/*href="#" className="wd-follow-handle">@${post.handle}</a>*/}

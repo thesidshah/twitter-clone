@@ -51,8 +51,9 @@ import whoReducer from "./reducers/who-reducer";
 import {combineReducers,createStore} from "redux";
 import WhoToFollowList from "./WhoToFollowList";
 import tuitsReducer from "./reducers/tuits-reducer";
+import ProfileReducer from "./reducers/profile-reducer";
 
-const reducers = combineReducers( {who: whoReducer,tuits: tuitsReducer});
+const reducers = combineReducers( {who: whoReducer,tuits: tuitsReducer, profile : ProfileReducer});
 const store = createStore(reducers);
 // const store = createStore(whoReducer);
 
