@@ -1,5 +1,5 @@
 const ProfileData = {
-firstName: 'Jose', lastName: 'Annunziato', handle: 'jannunzi',
+name: 'Jose Annunziato', handle: 'jannunzi',
 profilePicture: '../images/elon.jpg', 	bannerPicture: '../images/starship.jpg',
 bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.',
 website: 'youtube.com/webdevtv',

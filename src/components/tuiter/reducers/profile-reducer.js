@@ -2,7 +2,7 @@ import profileData from "../data/profileData";
 const ProfileReducer = (state = profileData, action) => {
     switch (action.type){
     case 'save':
-        state.firstName = action.firstName;
+        state.name = action.name;
         state.bio = action.bio;
         return state;
     default:
