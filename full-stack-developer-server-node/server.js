@@ -1,4 +1,9 @@
-const express = require('express');
+// const express = require('express'); -> non es6
+import express from 'express';
+import helloController from "./controllers/hello-controller.js";
+import userController from "./controllers/user-controller.js";
+
 const app = express();
-app.get('/hello', (req, res) => {res.send('Life is good!')})
+helloController(app);
+userController(app);
 app.listen(4000);
