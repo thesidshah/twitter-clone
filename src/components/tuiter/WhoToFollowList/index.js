@@ -6,7 +6,7 @@ const WhoToFollowList = () => {
     const who = useSelector((state) => state.who);
     return(
         <>
-        <ul>
+        <ul style={{paddingLeft: 0 + 'px'}}>
             <li className="list-group-item list-group-items  wd-bg-gray">Who to follow</li>
             {
                 who.map(who => {

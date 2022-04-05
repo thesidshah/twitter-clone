@@ -76,7 +76,12 @@ const TuitListItem = ({tuit = {
     return(
         <li className = "list-group-item">
 
+            <div className="row">
+                <div className={"col-sm-1"}>
             <img src={tuit["logo-image"]} className = "wd-display-img" alt = "Profile"/>
+                </div>
+                <div className={"col-sm-11"}>
+                    <div>
             <a href = "/" className = "wd-topic-heading">{tuit.postedBy.username}</a>
             {tuit.verified ? <i className="fa fa-check-circle"/> : <></>}
             <a href = "/" className = "wd-follow-handle">@{tuit.handle + " "}</a>
@@ -84,12 +89,14 @@ const TuitListItem = ({tuit = {
             {/*<div className = "pull-right float-end">*/}
             {/*<a className = "wd-delete-tuit" onClickCapture={tuitClickHandler}  ><i className="fa-solid fa-x"/></a>*/}
             {/*</div><br/>*/}
+
             <i onClick={() =>
     tuitClickHandler(tuit)}
     className="fas fa-remove
                   fa-pull-right"/>
+                    </div>
             {/*<span className="wd-topic-topicname">{tuit.title}</span><br/>*/}
-            <span className="wd-topic-description">{tuit.tuit}</span><br/>
+            <span className="wd-topic-description wd-tuit-body">{tuit.tuit}</span><br/>
             {videoCheck({tuit})}
             <TuitStats tuit = {tuit}/>
             {/*<img src="${tuit.image}" className="wd-display-img" alt = "tuit image"/>*/}
@@ -106,7 +113,9 @@ const TuitListItem = ({tuit = {
             {/*            <a href="#" className="wd-icon-link"><i className="fa fa-retweet"/> 34</a>*/}
             {/*            <a href="#" className="wd-icon-link-heart">    &#10084;  2</a>*/}
             {/*            <a href="#" className="wd-icon-link"><i className="fa fa-upload" aria-hidden="true"/></a>*/}
-            {/*        </div>*/}
+            {/*</div>*/}
+                </div>
+            </div>
             </li>
     );
 }

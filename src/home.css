@@ -125,9 +125,11 @@
 }
 
 .col-lg-4.d-none.d-lg-block{
+	margin-top: 15px;
 }
 
 .wd-page{
+	margin-top: 15px;
 	background-color: black;
 }
 
@@ -157,7 +159,7 @@
 	color: white;
 	font-weight: bold;
 	/*background-color: black;*/
-	border-color: gray;
+	/*border-color: gray;*/
 }
 
 .btn.btn-primary.btn-sm.followBtn{
@@ -315,4 +317,8 @@
 
 .wd-tuit-delete {
 	float: left;
+}
+
+.wd-tuit-body{
+	font-weight: normal;
 }

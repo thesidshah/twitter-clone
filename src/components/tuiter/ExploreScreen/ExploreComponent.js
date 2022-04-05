@@ -75,9 +75,15 @@ import React from "react";
 const ExploreComponent = () => {
     return(
         <>
-            <span className="wd-search "><i className="fa fa-search"/></span>
+            {/*<span className="wd-search "><i className="fa fa-search"/></span>*/}
+            {/*<div className="input-group mb-6">*/}
+            {/*    <input type="search" className="form-control rounded-pill wd-padded-left" placeholder="Search Twitter" aria-label="Search"*/}
+            {/*           aria-describedby="search-addon" />*/}
+            {/*    <i className="fa fa-cog fa-2x" />*/}
+            {/*</div>*/}
             <div className="input-group mb-6">
-                <input type="search" className="form-control rounded-pill wd-padded-left" placeholder="Search Twitter" aria-label="Search"
+                <span className="wd-search-glass "><i className="fa fa-search"/></span>
+                <input type="search" className="form-control rounded-pill wd-padded-left mt-11" placeholder="Search Twitter" aria-label="Search"
                        aria-describedby="search-addon" />
                 <i className="fa fa-cog fa-2x" />
             </div>
