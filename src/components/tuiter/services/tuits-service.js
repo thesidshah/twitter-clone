@@ -6,8 +6,8 @@ import axios from 'axios';
 *  the request resolves from the server. The data in the response is the
 *  tuits array sent back from findAllTuits in tuits-controller.js and it's embedded in the response's data property.
 * */
-const TUITS_API = 'http://localhost:4000/api/tuits';
-
+// const TUITS_API = 'http://localhost:4000/api/tuits';
+const TUITS_API = 'https://full-stack-sid.herokuapp.com/api/tuits';
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit);
     return response.data;
