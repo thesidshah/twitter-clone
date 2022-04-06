@@ -5,12 +5,25 @@ let tuits = posts;
 const createTuit = (req,res) => {
     const newTuit = req.body;
     newTuit._id = (new Date()).getTime()+'';
-    newTuit.likes = 0;
+    // newTuit.userName = 'React';
+    newTuit.postedOn = new Date().getDate();
+    newTuit.liked = false;
+    newTuit.verified = false;
+    newTuit.handle="ReactJS";
+    newTuit.postedBy= {
+        "username": "ReactJS"
+    };
+    newTuit["logo-image"]= "../images/react.png";
+        newTuit.stats= {
+        retuits: 0,
+            likes: 0,
+            comments: 0
+    }
     tuits.push(newTuit);
     res.json(newTuit);
 }
 const findAllTuits = (req,res) => {
-    res.json(tuits);d
+    res.json(tuits);
 
 }
 const updateTuit = (req, res) => {

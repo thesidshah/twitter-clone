@@ -1,10 +1,31 @@
 import {useDispatch} from "react-redux";
 import React from "react";
+import {updateTuit} from "../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
     const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
+
+        if(!tuit.liked) {
+            updateTuit(dispatch, {
+                ...tuit,
+                liked: true,
+                stats: {
+                    ...tuit.stats,
+                    likes: tuit.stats.likes + 1
+                }
+            })
+        }
+        else {
+            updateTuit(dispatch, {
+                ...tuit,
+                liked: false,
+                stats: {
+                    ...tuit.stats,
+                    likes: tuit.stats.likes - 1
+                }
+            })
+        }
     };
     return (
         <div className="wd-icon-links">

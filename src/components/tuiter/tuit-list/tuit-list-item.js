@@ -1,6 +1,7 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
 import TuitStats from "../HomeScreen/tuit-stats";
+import {deleteTuit} from "../actions/tuits-actions";
 
 const videoCheck = ({tuit = {
     "_id": "123",
@@ -68,11 +69,11 @@ const TuitListItem = ({tuit = {
 }}) => {
 
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'delete-tuit',
-            tuit: tuit
-        });
-    }
+    // const tuitClickHandler = () => {
+    //     dispatch({type: 'delete-tuit',
+    //         tuit: tuit
+    //     });
+    // }
     return(
         <li className = "list-group-item">
 
@@ -91,7 +92,7 @@ const TuitListItem = ({tuit = {
             {/*</div><br/>*/}
 
             <i onClick={() =>
-    tuitClickHandler(tuit)}
+    deleteTuit(dispatch, tuit)}
     className="fas fa-remove
                   fa-pull-right"/>
                     </div>
