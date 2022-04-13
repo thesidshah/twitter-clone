@@ -3,7 +3,7 @@ import {Link, useLocation} from "react-router-dom";
 import NavSideBarItem from "./NavSideBarItem";
 import NavSideBarItems from "./NavSideBarItems";
 
-const NavigationSidebar = ({activeItem = 'Explore'}) => {s
+const NavigationSidebar = ({activeItem = 'Explore'}) => {
 
     const linkArray = (window.location.pathname).split("/");
     let active = (linkArray[linkArray.length-1]);

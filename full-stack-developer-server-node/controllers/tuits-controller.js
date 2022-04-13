@@ -4,7 +4,6 @@ let tuits = posts;
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
-    const insertedTuit = await tuitsDao.createTuit(newTuit);
     // newTuit._id = (new Date()).getTime() + '';
     // newTuit.userName = 'React';
     newTuit.postedOn = new Date().getDate();
@@ -20,8 +19,10 @@ const createTuit = async (req, res) => {
         likes: 0,
         comments: 0
     }
+    const insertedTuit = await tuitsDao.createTuit(newTuit);
     // tuits.push(newTuit);
-    res.json(newTuit);
+    console.log(insertedTuit);
+    res.json(insertedTuit);
 }
 const findAllTuits =async (req,res) => {
     const tuits = await tuitsDao.findAllTuits();
