@@ -11,7 +11,7 @@ const createTuit = async (req, res) => {
     newTuit.verified = false;
     newTuit.handle = "ReactJS";
     newTuit.postedBy = {
-        "username": "ReactJS"
+        username: "ReactJS"
     };
     newTuit["logo-image"] = "../images/react.png";
     newTuit.stats = {

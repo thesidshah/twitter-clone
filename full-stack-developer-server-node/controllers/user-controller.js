@@ -54,7 +54,7 @@ const findUserById = (req, res) => {
 const findAllUsers = (req, res) => {
 
     const type = req.query.type;
-    console.log(type);
+    // console.log(type);
     if(type) {
         res.json(findUsersByType(type));
         return;

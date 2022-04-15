@@ -74,6 +74,7 @@ const TuitListItem = ({tuit = {
     //         tuit: tuit
     //     });
     // }
+    console.log(tuit.postedBy);
     return(
         <li className = "list-group-item">
 
