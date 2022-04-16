@@ -4,10 +4,11 @@ let tuits = posts;
 
 const createTuit = async (req, res) => {
     const newTuit = req.body;
-    // newTuit._id = (new Date()).getTime() + '';
+    newTuit._id = (new Date()).getTime() + '';
     // newTuit.userName = 'React';
     newTuit.postedOn = new Date().getDate();
     newTuit.liked = false;
+    newTuit.disliked = false;
     newTuit.verified = false;
     newTuit.handle = "ReactJS";
     newTuit.postedBy = {
@@ -17,6 +18,7 @@ const createTuit = async (req, res) => {
     newTuit.stats = {
         retuits: 0,
         likes: 0,
+        dislikes: 0,
         comments: 0
     }
     const insertedTuit = await tuitsDao.createTuit(newTuit);
@@ -26,16 +28,24 @@ const createTuit = async (req, res) => {
 }
 const findAllTuits =async (req,res) => {
     const tuits = await tuitsDao.findAllTuits();
+    // console.log(tuits);
     res.json(tuits);
 }
+// const updateTuit = async (req, res) => {
+//     const tuitdIdToUpdate = req.params.tid;
+//     const updatedTuit = req.body;
+//     updateTuit._id = tuitdIdToUpdate;
+//     // tuits = tuits.map(t => t._id === tuitdIdToUpdate ? updatedTuit : t);
+//     console.log("Updated Tuit",updatedTuit);
+//     const status = await tuitsDao.updateTuit(tuitdIdToUpdate, updatedTuit);
+//     res.sendStatus(status);
+//
+// }
 const updateTuit = async (req, res) => {
     const tuitdIdToUpdate = req.params.tid;
     const updatedTuit = req.body;
-    updateTuit._id = tuitdIdToUpdate;
-    // tuits = tuits.map(t => t._id === tuitdIdToUpdate ? updatedTuit : t);
     const status = await tuitsDao.updateTuit(tuitdIdToUpdate, updatedTuit);
-    res.sendStatus(200);
-
+    res.send(status);
 }
 
 const deleteTuit = async (req, res) => {

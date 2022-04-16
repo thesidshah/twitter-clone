@@ -27,6 +27,29 @@ const TuitStats = ({tuit}) => {
             })
         }
     };
+    const dislikeTuit = () => {
+
+        if(!tuit.disliked) {
+            updateTuit(dispatch, {
+                ...tuit,
+                disliked: true,
+                stats: {
+                    ...tuit.stats,
+                    dislikes: tuit.stats.dislikes + 1
+                }
+            })
+        }
+        else {
+            updateTuit(dispatch, {
+                ...tuit,
+                disliked: false,
+                stats: {
+                    ...tuit.stats,
+                    dislikes: tuit.stats.dislikes - 1
+                }
+            })
+        }
+    };
     return (
         <div className="wd-icon-links">
             <a href="/" className="wd-icon-link"><i className='fa fa-comment'/> {tuit.stats.comments}</a>
@@ -42,6 +65,18 @@ const TuitStats = ({tuit}) => {
                     <i className="far fa-heart me-1"/>
                 }
                 {tuit.stats && tuit.stats.likes}
+    </span>
+            <span onClick={dislikeTuit}>
+    {
+        tuit.disliked &&
+        <i className="fas fa-face-angry me-1"
+           style={{color: 'red'}}/>
+    }
+                {
+                    !tuit.disliked &&
+                    <i className="far fa-face-angry me-1"/>
+                }
+                {tuit.stats && tuit.stats.dislikes}
     </span>
             <a href="/" className="wd-icon-link"><i className="fa fa-upload" aria-hidden="true"/></a>
     </div>

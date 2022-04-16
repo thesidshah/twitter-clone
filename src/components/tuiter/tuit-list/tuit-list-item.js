@@ -51,6 +51,7 @@ const TuitListItem = ({tuit = {
         "username": "ReactJS"
     },
     "liked": true,
+    "disliked": false,
     "verified": false,
     "handle": "ReactJS",
     "time": "2h",
@@ -64,7 +65,8 @@ const TuitListItem = ({tuit = {
     "stats": {
         "comments": 123,
         "retuits": 234,
-        "likes": 345
+        "likes": 345,
+        "dislikes":12,
     }
 }}) => {
 
@@ -74,8 +76,6 @@ const TuitListItem = ({tuit = {
     //         tuit: tuit
     //     });
     // }
-    console.log(tuit);
-    console.log(tuit.postedBy);
     return(
         <li className = "list-group-item">
 
